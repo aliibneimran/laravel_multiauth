@@ -38,7 +38,7 @@
                 <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="dropdownProfile">
                   <li><a class="dropdown-item" href="profile">Profiles</a></li>
                   <li><a class="dropdown-item" href="my-resume">CV Manager</a></li>
-                  <form method="POST" action="{{ route('logout') }}">
+                  <form method="post" action="{{ route('logout') }}">
                     @csrf
                     <li><a href="{{ route('logout') }}" class="dropdown-item" type="submit">Log Out</a></li>
                   </form>
